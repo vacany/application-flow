@@ -33,7 +33,6 @@ python optimize_frame.py *path_to_frame*
 The script will compute Flows, dynamic mask per-point, instances by DBSCAN from geometry and motion features and pose estimation in output:
 
 ```console
-Eval time:  3.917 
 Clusters:  (136898,) ---> [int ids]
 Dynamic points:  torch.Size([136898]) ---> [binary mask]
 Flow:  torch.Size([136898, 3]) ---> [float per-point flows]
