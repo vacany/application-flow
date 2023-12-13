@@ -26,17 +26,17 @@ The data consist of *.npz files, where inside key names corresponds to:
 
 After installation of the package and setting up the data, you can run: 
 ```console
-python tools/optimize_frame.py *path_to_frame*
+python optimize_frame.py *path_to_frame*
 ```
 
 The script will compute Flows, dynamic mask per-point, instances by DBSCAN from geometry and motion features and pose estimation in output:
 
 ```console
 Eval time:  3.917 
-Clusters:  (136898,) 
-Dynamic points:  torch.Size([136898]) 
-Flow:  torch.Size([136898, 3]) 
-Pose:  torch.Size([4, 4]) 
+Clusters:  (136898,) ---> [int ids]
+Dynamic points:  torch.Size([136898]) ---> [binary mask]
+Flow:  torch.Size([136898, 3]) ---> [float per-point flows]
+Pose:  torch.Size([4, 4]) ---> [odometry matrix]
 ```
 
-where you can look at the and of the script for format and save the output to your desired location
+where you can look at the and of the script for format and save the output to your desired location.
