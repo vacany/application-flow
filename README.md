@@ -18,9 +18,10 @@ tar -xvf data_sceneflow.tgz $BASE_PATH/data/sceneflow
 ```
 
 The data consist of *.npz files, where inside key names corresponds to:
-'pc1' : xyz points in time **t**
-'pc2' : xyz points in time **t+1**
-'pose1' : Pose Transformation from **t** to **t+1** 
+
+- 'pc1' : xyz points in time **t**
+- 'pc2' : xyz points in time **t+1**
+- 'pose1' : Pose Transformation from **t** to **t+1** 
 
 # Use Case
 
